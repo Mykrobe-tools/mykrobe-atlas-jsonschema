@@ -6,7 +6,6 @@ const experimentSchema = {
   $schema: "http://json-schema.org/draft-07/schema#",
   definitions,
   properties: {
-    organisation: { $ref: "#/definitions/Organisation" },
     file: {
       type: "string"
     },
