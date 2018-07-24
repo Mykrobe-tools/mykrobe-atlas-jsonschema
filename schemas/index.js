@@ -1,9 +1,9 @@
 import experiment from "./experiment";
 import uploadExperiment from "./upload-experiment";
-import forgotPassword from "./forgotPassword";
+import forgotPassword from "./forgot-password";
 import login from "./login";
-import resendNotification from "./resendNotification";
-import refershToken from "./refershToken";
+import resendNotification from "./resend-notification";
+import refreshToken from "./refresh-token";
 import register from "./register";
 import user from "./user";
 
@@ -13,7 +13,7 @@ export {
   forgotPassword,
   login,
   resendNotification,
-  refershToken,
+  refreshToken,
   register,
   user
 };
