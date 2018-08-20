@@ -18,7 +18,8 @@ const Result = {
         properties: {
           name: {
             title: "Name",
-            type: "string"
+            type: "string",
+            enum: ["Isoniazid", "Kanamycin", "Ethambutol", "Streptomycin", "Capreomycin", "Quinolones", "Pyrazinamide", "Rifampicin", "Amikacin"]
           },
           prediction: {
             title: "Prediction",
@@ -40,7 +41,8 @@ const Result = {
         properties: {
           type: {
             title: "Name",
-            type: "string"
+            type: "string",
+            enum: ["phylo_group", "sub_complex", "species", "lineage"]
           },
           result: {
             title: "Name",
