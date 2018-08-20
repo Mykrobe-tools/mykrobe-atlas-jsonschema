@@ -10,7 +10,7 @@ const Result = {
       title: "Analysed",
       type: "string"
     },
-    susceptitibility: {
+    susceptibility: {
       title: "Susceptibility",
       type: "array",
       items: {
