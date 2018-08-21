@@ -8,7 +8,8 @@ const Result = {
     },
     analysed: {
       title: "Analysed",
-      type: "string"
+      type: "string",
+      format: "date-time"
     },
     susceptibility: {
       title: "Susceptibility",
