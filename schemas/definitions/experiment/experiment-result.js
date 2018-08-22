@@ -20,7 +20,17 @@ const Result = {
           name: {
             title: "Name",
             type: "string",
-            enum: ["Isoniazid", "Kanamycin", "Ethambutol", "Streptomycin", "Capreomycin", "Quinolones", "Pyrazinamide", "Rifampicin", "Amikacin"]
+            enum: [
+              "Isoniazid",
+              "Kanamycin",
+              "Ethambutol",
+              "Streptomycin",
+              "Capreomycin",
+              "Quinolones",
+              "Pyrazinamide",
+              "Rifampicin",
+              "Amikacin"
+            ]
           },
           prediction: {
             title: "Prediction",
@@ -69,7 +79,7 @@ const Result = {
       type: "object"
     },
     kmer: {
-      title: "KMER",
+      title: "K-mer",
       type: "number"
     },
     probeSets: {
