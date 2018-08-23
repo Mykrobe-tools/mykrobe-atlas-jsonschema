@@ -104,7 +104,8 @@ const Result = {
     },
     genotypeModel: {
       title: "Genotype model",
-      type: "string"
+      type: "string",
+      enum: ["median_depth"]
     }
   }
 };
