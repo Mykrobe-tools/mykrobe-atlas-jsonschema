@@ -4,7 +4,8 @@ const Result = {
   properties: {
     type: {
       title: "Type",
-      type: "string"
+      type: "string",
+      enum: ["predictor", "distance"]
     },
     analysed: {
       title: "Analysed",
