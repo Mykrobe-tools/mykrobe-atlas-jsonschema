@@ -5,33 +5,31 @@ const userResultSchema = {
   properties: {
     type: {
       type: "string",
-      enum: ["sequence", "protein-variant"]
+      enum: ["sequence", "protein-variant", "dna-variant"]
     },
     result: {
+      type: "object"
+    },
+    query: {
       type: "object",
       properties: {
-        query: {
-          type: "object",
-          properties: {
-            seq: {
-              type: "string"
-            },
-            threshold: {
-              type: "number"
-            },
-            ref: {
-              type: "string"
-            },
-            alt: {
-              type: "string"
-            },
-            pos: {
-              type: "number"
-            },
-            gene: {
-              type: "string"
-            }
-          }
+        seq: {
+          type: "string"
+        },
+        threshold: {
+          type: "number"
+        },
+        ref: {
+          type: "string"
+        },
+        alt: {
+          type: "string"
+        },
+        pos: {
+          type: "number"
+        },
+        gene: {
+          type: "string"
         }
       }
     }
@@ -43,7 +41,7 @@ const userResultSchema = {
           type: { enum: ["sequence"] }
         }
       },
-      deepRequired: ["/result/seq", "/result/threshold"]
+      deepRequired: ["/query/seq", "/query/threshold"]
     },
     {
       case: {
@@ -51,7 +49,7 @@ const userResultSchema = {
           type: { enum: ["protein-variant"] }
         }
       },
-      deepRequired: ["/result/ref", "/result/alt", "/result/pos", "/result/gene"]
+      deepRequired: ["/query/ref", "/query/alt", "/query/pos", "/query/gene"]
     }
   ]
 };
