@@ -6,6 +6,7 @@ import resendNotification from "./resend-notification";
 import refreshToken from "./refresh-token";
 import register from "./register";
 import user from "./user";
+import userResult from "./user-result";
 
 export {
   experiment,
@@ -15,5 +16,6 @@ export {
   resendNotification,
   refreshToken,
   register,
-  user
+  user,
+  userResult
 };
