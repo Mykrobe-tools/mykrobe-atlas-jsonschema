@@ -85,7 +85,7 @@ const Phenotyping = {
       $ref: "#/definitions/Susceptibility"
     },
     rerizidone: {
-      title: "Terizidone",
+      title: "Rerizidone",
       $ref: "#/definitions/Susceptibility"
     },
     amoxicilinClavulanate: {

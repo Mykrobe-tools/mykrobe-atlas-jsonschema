@@ -1,5 +1,5 @@
 const userResultSchema = {
-  $id: "https://api.atlas-dev.makeandship.com/schemas/user-result.json",
+  $id: "https://api.atlas-dev.makeandship.com/schemas/search.json",
   type: "object",
   $schema: "http://json-schema.org/draft-07/schema#",
   properties: {
@@ -10,7 +10,7 @@ const userResultSchema = {
     result: {
       type: "object"
     },
-    query: {
+    bigsi: {
       type: "object",
       properties: {
         seq: {
@@ -32,6 +32,9 @@ const userResultSchema = {
           type: "string"
         }
       }
+    },
+    query: {
+      type: "object"
     }
   },
   when: [
@@ -41,7 +44,7 @@ const userResultSchema = {
           type: { enum: ["sequence"] }
         }
       },
-      deepRequired: ["/query/seq", "/query/threshold"]
+      deepRequired: ["/bigsi/seq", "/bigsi/threshold"]
     },
     {
       case: {
@@ -49,7 +52,7 @@ const userResultSchema = {
           type: { enum: ["protein-variant"] }
         }
       },
-      deepRequired: ["/query/ref", "/query/alt", "/query/pos", "/query/gene"]
+      deepRequired: ["/bigsi/ref", "/bigsi/alt", "/bigsi/pos", "/bigsi/gene"]
     }
   ]
 };
