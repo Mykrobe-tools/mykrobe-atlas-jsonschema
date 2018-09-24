@@ -42,10 +42,6 @@ const userResultSchema = {
     },
     hash: {
       type: "string"
-    },
-    expires: {
-      type: "string",
-      format: "date-time"
     }
   },
   when: [
