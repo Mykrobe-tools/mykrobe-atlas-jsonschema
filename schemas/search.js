@@ -35,6 +35,17 @@ const userResultSchema = {
     },
     query: {
       type: "object"
+    },
+    status: {
+      type: "string",
+      enum: ["complete", "pending"]
+    },
+    hash: {
+      type: "string"
+    },
+    expires: {
+      type: "string",
+      format: "date-time"
     }
   },
   when: [
