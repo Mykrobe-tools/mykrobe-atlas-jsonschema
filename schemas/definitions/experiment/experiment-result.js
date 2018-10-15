@@ -36,7 +36,7 @@ const Result = {
           prediction: {
             title: "Prediction",
             type: "string",
-            enum: ["R", "S", "U", "n/a"]
+            enum: ["R", "S"]
           },
           calledBy: {
             title: "Called by",
