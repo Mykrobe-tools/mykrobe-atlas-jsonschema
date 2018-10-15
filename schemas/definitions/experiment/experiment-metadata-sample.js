@@ -182,7 +182,6 @@ const Sample = {
         "NA",
         "NC",
         "NE",
-        "NE",
         "NF",
         "NG",
         "NI",
