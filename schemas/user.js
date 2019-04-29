@@ -48,6 +48,9 @@ const userSchema = {
       minLength: 1,
       format: "email"
     },
+    username: {
+      type: "string"
+    },
     resetPasswordToken: {
       type: ["string", "null"]
     },
@@ -65,7 +68,7 @@ const userSchema = {
       }
     }
   },
-  required: ["firstname", "lastname", "email"]
+  required: ["username"]
 };
 
 export default userSchema;

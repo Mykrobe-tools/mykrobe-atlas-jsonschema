@@ -5,12 +5,10 @@ const userSchema = {
   definitions: {},
   properties: {
     firstname: {
-      type: "string",
-      minLength: 1
+      type: "string"
     },
     lastname: {
-      type: "string",
-      minLength: 1
+      type: "string"
     },
     password: {
       type: "string",
@@ -23,9 +21,12 @@ const userSchema = {
       type: "string",
       minLength: 1,
       format: "email"
+    },
+    username: {
+      type: "string"
     }
   },
-  required: ["firstname", "lastname", "email", "password"]
+  required: ["username"]
 };
 
 export default userSchema;

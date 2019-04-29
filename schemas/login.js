@@ -3,13 +3,13 @@ const loginSchema = {
   type: "object",
   $schema: "http://json-schema.org/draft-07/schema#",
   properties: {
-    email: {
+    username: {
       type: "string",
       format: "email"
     },
     password: { type: "string" }
   },
-  required: ["email", "password"]
+  required: ["username", "password"]
 };
 
 export default loginSchema;
