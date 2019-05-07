@@ -54,7 +54,15 @@ const Result = {
           type: {
             title: "Name",
             type: "string",
-            enum: ["complex", "sub-complex", "species", "sub-species"]
+            enum: [
+              "complex",
+              "sub-complex",
+              "species",
+              "sub-species",
+              "phylo_group",
+              "sub_complex",
+              "lineage"
+            ]
           },
           result: {
             title: "Name",
