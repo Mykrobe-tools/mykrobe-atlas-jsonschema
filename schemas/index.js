@@ -9,6 +9,7 @@ import refreshToken from "./refresh-token";
 import register from "./register";
 import user from "./user";
 import search from "./search";
+import tree from "./tree";
 
 export {
   audit,
@@ -21,5 +22,6 @@ export {
   refreshToken,
   register,
   user,
-  search
+  search,
+  tree
 };
