@@ -20,4 +20,4 @@ const treeSchema = {
   }
 };
 
-export default tree;
+export default treeSchema;
