@@ -1,4 +1,4 @@
-const userResultSchema = {
+const searchSchema = {
   $id: "https://api.atlas-dev.makeandship.com/schemas/search.json",
   type: "object",
   $schema: "http://json-schema.org/draft-07/schema#",
@@ -64,4 +64,4 @@ const userResultSchema = {
   ]
 };
 
-export default userResultSchema;
+export default searchSchema;
