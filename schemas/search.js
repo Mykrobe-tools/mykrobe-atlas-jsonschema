@@ -42,6 +42,10 @@ const searchSchema = {
     },
     hash: {
       type: "string"
+    },
+    expires: {
+      type: "string",
+      format: "date-time"
     }
   },
   when: [
