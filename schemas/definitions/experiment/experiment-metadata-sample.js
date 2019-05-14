@@ -527,11 +527,15 @@ const Sample = {
     },
     longitudeIsolate: {
       title: "Isolate longitude",
-      type: "number"
+      type: "number",
+      minimum: -90,
+      maximum: 90
     },
     latitudeIsolate: {
       title: "Isolate latitude",
-      type: "number"
+      type: "number",
+      minimum: -90,
+      maximum: 90
     },
     dateArrived: {
       title: "Date Arrived",
