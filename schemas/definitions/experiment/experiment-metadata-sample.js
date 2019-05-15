@@ -528,8 +528,8 @@ const Sample = {
     longitudeIsolate: {
       title: "Isolate longitude",
       type: "number",
-      minimum: -90,
-      maximum: 90
+      minimum: -180,
+      maximum: 180
     },
     latitudeIsolate: {
       title: "Isolate latitude",
