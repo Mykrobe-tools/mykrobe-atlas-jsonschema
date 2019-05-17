@@ -7,6 +7,11 @@ const Result = {
       type: "string",
       enum: ["predictor", "distance", "nearestNeighbours"]
     },
+    received: {
+      title: "Received",
+      type: "string",
+      format: "date-time"
+    },
     analysed: {
       title: "Analysed",
       type: "string",
