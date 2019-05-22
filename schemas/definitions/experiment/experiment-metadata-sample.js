@@ -109,7 +109,6 @@ const Sample = {
         "GL",
         "GM",
         "GN",
-        "GO",
         "GP",
         "GQ",
         "GR",
