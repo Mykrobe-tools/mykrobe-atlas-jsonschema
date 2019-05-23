@@ -19,6 +19,7 @@ const Patient = {
       title: "Country Of Birth",
       type: "string",
       enum: [
+        "",
         "AD",
         "AE",
         "AF",
@@ -267,6 +268,7 @@ const Patient = {
         "ZW"
       ],
       enumNames: [
+        "",
         "Andorra",
         "United Arab Emirates",
         "Afghanistan",
