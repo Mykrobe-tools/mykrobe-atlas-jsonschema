@@ -24,6 +24,7 @@ const Sample = {
       title: "Country Isolate",
       type: "string",
       enum: [
+        "",
         "AD",
         "AE",
         "AF",
@@ -272,6 +273,7 @@ const Sample = {
         "ZW"
       ],
       enumNames: [
+        "",
         "Andorra",
         "United Arab Emirates",
         "Afghanistan",
