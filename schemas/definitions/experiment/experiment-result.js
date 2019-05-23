@@ -27,6 +27,9 @@ const Result = {
             title: "Name",
             type: "string",
             enum: [
+              "Ofloxacin",
+              "Moxifloxacin",
+              "Ciprofloxacin",
               "Isoniazid",
               "Kanamycin",
               "Ethambutol",
