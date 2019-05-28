@@ -63,7 +63,7 @@ const searchSchema = {
           type: { enum: ["protein-variant"] }
         }
       },
-      deepRequired: ["/bigsi/ref", "/bigsi/alt", "/bigsi/pos", "/bigsi/gene"]
+      deepRequired: ["/bigsi/ref", "/bigsi/alt", "/bigsi/pos"]
     }
   ]
 };
