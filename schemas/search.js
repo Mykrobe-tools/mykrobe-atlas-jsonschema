@@ -13,23 +13,28 @@ const searchSchema = {
     bigsi: {
       type: "object",
       properties: {
-        seq: {
-          type: "string"
-        },
-        threshold: {
-          type: "number"
-        },
-        ref: {
-          type: "string"
-        },
-        alt: {
-          type: "string"
-        },
-        pos: {
-          type: "number"
-        },
-        gene: {
-          type: "string"
+        query: {
+          type: "object",
+          properties: {
+            seq: {
+              type: "string"
+            },
+            threshold: {
+              type: "number"
+            },
+            ref: {
+              type: "string"
+            },
+            alt: {
+              type: "string"
+            },
+            pos: {
+              type: "number"
+            },
+            gene: {
+              type: "string"
+            }
+          }
         }
       }
     },
@@ -55,7 +60,15 @@ const searchSchema = {
           type: { enum: ["sequence"] }
         }
       },
-      deepRequired: ["/bigsi/seq", "/bigsi/threshold"]
+      deepRequired: ["/bigsi/query/seq", "/bigsi/query/threshold"]
+    },
+    {
+      case: {
+        properties: {
+          type: { enum: ["dna-variant"] }
+        }
+      },
+      deepRequired: ["/bigsi/query/ref", "/bigsi/query/alt", "/bigsi/query/pos"]
     },
     {
       case: {
@@ -63,7 +76,12 @@ const searchSchema = {
           type: { enum: ["protein-variant"] }
         }
       },
-      deepRequired: ["/bigsi/ref", "/bigsi/alt", "/bigsi/pos"]
+      deepRequired: [
+        "/bigsi/query/ref",
+        "/bigsi/query/alt",
+        "/bigsi/query/pos",
+        "/bigsi/query/gene"
+      ]
     }
   ]
 };
