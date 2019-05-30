@@ -5,7 +5,11 @@ const Result = {
     type: {
       title: "Type",
       type: "string",
-      enum: ["predictor", "distance", "nearestNeighbours"]
+      enum: [
+        "predictor",
+        "distance-tree-distance",
+        "distance-nearest-neighbour"
+      ]
     },
     received: {
       title: "Received",

@@ -1,5 +1,6 @@
 import audit from "./audit";
 import experiment from "./experiment";
+import experimentSearch from "./experimentSearch";
 import uploadExperiment from "./upload-experiment";
 import forgotPassword from "./forgot-password";
 import login from "./login";
@@ -14,6 +15,7 @@ import tree from "./tree";
 export {
   audit,
   experiment,
+  experimentSearch,
   uploadExperiment,
   forgotPassword,
   login,
