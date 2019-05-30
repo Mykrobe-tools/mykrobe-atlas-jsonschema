@@ -8,7 +8,8 @@ const Result = {
       enum: [
         "predictor",
         "distance-tree-distance",
-        "distance-nearest-neighbour"
+        "distance-nearest-neighbour",
+        "distance"
       ]
     },
     received: {
