@@ -159,4 +159,4 @@ const Result = {
   }
 };
 
-export { Result };
+export { Result as ResultPredictor };
