@@ -5,7 +5,7 @@ const DistanceResult = {
     type: {
       title: "Type",
       type: "string",
-      enum: ["distance-tree-distance", "distance-nearest-neighbour"]
+      enum: ["distance"]
     },
     subType: {
       title: "SubType",
