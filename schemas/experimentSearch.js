@@ -1,12 +1,23 @@
 import { definitions } from "./definitions/experiment";
 import { definitions as searchDefinitions } from "./definitions/search";
 
-const experimentSchema = {
-  $id: "https://api.atlas-dev.makeandship.com/schemas/experiment.json",
+const experimentSearchSchema = {
+  $id: "https://api.atlas-dev.makeandship.com/schemas/experimentSearch.json",
   type: "object",
   $schema: "http://json-schema.org/draft-07/schema#",
-  definitions,
-  searchDefinitions,
+  definitions: {
+    Metadata: definitions.Metadata,
+    Patient: definitions.Patient,
+    Sample: definitions.Sample,
+    Genotyping: definitions.Genotyping,
+    Phenotyping: definitions.Phenotyping,
+    Susceptibility: definitions.Susceptibility,
+    Treatment: definitions.Treatment,
+    DrugPhase: definitions.DrugPhase,
+    Outcome: definitions.Outcome,
+    PredictorResult: searchDefinitions.PredictorResult,
+    DistanceResult: searchDefinitions.DistanceResult
+  },
   properties: {
     file: {
       type: "string"
@@ -18,19 +29,19 @@ const experimentSchema = {
       properties: {
         predictor: {
           title: "Predictor",
-          $ref: "#/searchDefinitions/PredictorResult"
+          $ref: "#/definitions/PredictorResult"
         },
         "distance-nearest-neighbour": {
           title: "Nearest neighbours",
-          $ref: "#/searchDefinitions/DistanceResult"
+          $ref: "#/definitions/DistanceResult"
         },
         "distance-tree-distance": {
           title: "Tree distance",
-          $ref: "#/searchDefinitions/DistanceResult"
+          $ref: "#/definitions/DistanceResult"
         }
       }
     }
   }
 };
 
-export default experimentSchema;
+export default experimentSearchSchema;

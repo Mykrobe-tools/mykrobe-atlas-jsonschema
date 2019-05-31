@@ -1,6 +1,6 @@
 const PredictorResult = {
   type: "object",
-  title: "Result",
+  title: "Predictor",
   properties: {
     susceptibility: {
       title: "Susceptibility",
@@ -10,8 +10,8 @@ const PredictorResult = {
           title: "Ofloxacin",
           type: "object",
           properties: {
-            title: "Prediction",
             prediction: {
+              title: "Prediction",
               type: "string",
               enum: ["R", "S"]
             }
@@ -21,8 +21,8 @@ const PredictorResult = {
           title: "Moxifloxacin",
           type: "object",
           properties: {
-            title: "Prediction",
             prediction: {
+              title: "Prediction",
               type: "string",
               enum: ["R", "S"]
             }
@@ -32,8 +32,8 @@ const PredictorResult = {
           title: "Isoniazid",
           type: "object",
           properties: {
-            title: "Prediction",
             prediction: {
+              title: "Prediction",
               type: "string",
               enum: ["R", "S"]
             }
@@ -43,8 +43,8 @@ const PredictorResult = {
           title: "Kanamycin",
           type: "object",
           properties: {
-            title: "Prediction",
             prediction: {
+              title: "Prediction",
               type: "string",
               enum: ["R", "S"]
             }
@@ -54,8 +54,8 @@ const PredictorResult = {
           title: "Ethambutol",
           type: "object",
           properties: {
-            title: "Prediction",
             prediction: {
+              title: "Prediction",
               type: "string",
               enum: ["R", "S"]
             }
@@ -65,8 +65,8 @@ const PredictorResult = {
           title: "Streptomycin",
           type: "object",
           properties: {
-            title: "Prediction",
             prediction: {
+              title: "Prediction",
               type: "string",
               enum: ["R", "S"]
             }
@@ -76,8 +76,8 @@ const PredictorResult = {
           title: "Ciprofloxacin",
           type: "object",
           properties: {
-            title: "Prediction",
             prediction: {
+              title: "Prediction",
               type: "string",
               enum: ["R", "S"]
             }
@@ -87,8 +87,8 @@ const PredictorResult = {
           title: "Pyrazinamide",
           type: "object",
           properties: {
-            title: "Prediction",
             prediction: {
+              title: "Prediction",
               type: "string",
               enum: ["R", "S"]
             }
@@ -98,8 +98,8 @@ const PredictorResult = {
           title: "Rifampicin",
           type: "object",
           properties: {
-            title: "Prediction",
             prediction: {
+              title: "Prediction",
               type: "string",
               enum: ["R", "S"]
             }
@@ -109,8 +109,8 @@ const PredictorResult = {
           title: "Amikacin",
           type: "object",
           properties: {
-            title: "Prediction",
             prediction: {
+              title: "Prediction",
               type: "string",
               enum: ["R", "S"]
             }
@@ -120,8 +120,8 @@ const PredictorResult = {
           title: "Capreomycin",
           type: "object",
           properties: {
-            title: "Prediction",
             prediction: {
+              title: "Prediction",
               type: "string",
               enum: ["R", "S"]
             }
@@ -130,13 +130,21 @@ const PredictorResult = {
       }
     },
     r: {
+      title: "Resistant",
       type: "boolean"
     },
     mdr: {
+      title: "MDR",
       type: "boolean"
     },
-    xdr: { type: "boolean" },
-    tdr: { type: "boolean" },
+    xdr: {
+      title: "XDR",
+      type: "boolean"
+    },
+    tdr: {
+      title: "TDR",
+      type: "boolean"
+    },
     type: {
       title: "Type",
       type: "string",
