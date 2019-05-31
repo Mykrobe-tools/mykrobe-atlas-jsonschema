@@ -1,7 +1,9 @@
-import { ResultPredictor } from "./experiment-result-predictor";
+import { PredictorResult } from "./experiment-result-predictor";
+import { DistanceResult } from "./experiment-result-distance";
 
 const definitions = {
-  ResultPredictor
+  PredictorResult,
+  DistanceResult
 };
 
 export { definitions };

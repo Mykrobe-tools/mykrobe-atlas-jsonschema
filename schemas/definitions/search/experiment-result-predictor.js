@@ -1,4 +1,4 @@
-const Result = {
+const PredictorResult = {
   type: "object",
   title: "Result",
   properties: {
@@ -140,11 +140,7 @@ const Result = {
     type: {
       title: "Type",
       type: "string",
-      enum: [
-        "predictor",
-        "distance-tree-distance",
-        "distance-nearest-neighbour"
-      ]
+      enum: ["predictor"]
     },
     received: {
       title: "Received",
@@ -159,4 +155,4 @@ const Result = {
   }
 };
 
-export { Result };
+export { PredictorResult };
