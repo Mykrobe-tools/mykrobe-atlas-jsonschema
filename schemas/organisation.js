@@ -4,16 +4,20 @@ const organisationSchema = {
   $schema: "http://json-schema.org/draft-07/schema#",
   properties: {
     name: {
-      type: "string"
+      type: "string",
+      unique: true
     },
     slug: {
       type: "string"
     },
-    groupId: {
+    membersGroupId: {
+      type: "string"
+    },
+    ownersGroupId: {
       type: "string"
     }
   },
-  required: ["name", "slug", "groupId"]
+  required: ["name"]
 };
 
 export default organisationSchema;
