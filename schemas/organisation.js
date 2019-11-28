@@ -6,10 +6,14 @@ const organisationSchema = {
     name: {
       type: "string"
     },
-    template: {
+    slug: {
+      type: "string"
+    },
+    groupId: {
       type: "string"
     }
-  }
+  },
+  required: ["name", "slug", "groupId"]
 };
 
 export default organisationSchema;
