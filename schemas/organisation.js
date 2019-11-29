@@ -8,7 +8,8 @@ const organisationSchema = {
       unique: true
     },
     slug: {
-      type: "string"
+      type: "string",
+      unique: true
     },
     membersGroupId: {
       type: "string"
