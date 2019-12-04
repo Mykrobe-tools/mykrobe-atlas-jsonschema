@@ -11,6 +11,7 @@ import register from "./register";
 import user from "./user";
 import search from "./search";
 import tree from "./tree";
+import event from "./event";
 
 export {
   audit,
@@ -25,5 +26,6 @@ export {
   register,
   user,
   search,
-  tree
+  tree,
+  event
 };
