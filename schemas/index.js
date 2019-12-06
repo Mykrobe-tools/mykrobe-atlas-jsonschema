@@ -12,6 +12,7 @@ import user from "./user";
 import search from "./search";
 import tree from "./tree";
 import event from "./event";
+import member from "./member";
 
 export {
   audit,
@@ -27,5 +28,6 @@ export {
   user,
   search,
   tree,
-  event
+  event,
+  member
 };
