@@ -55,19 +55,15 @@ const memberSchema = {
     username: {
       type: "string"
     },
-    approvedAt: {
+    actionedAt: {
       type: "string",
       format: "date-time"
     },
-    rejectedAt: {
-      type: "string",
-      format: "date-time"
-    },
-    approvedBy: {
+    actionedBy: {
       $ref: "#/definitions/User"
     },
-    rejectedBy: {
-      $ref: "#/definitions/User"
+    action: {
+      type: "string"
     }
   }
 };
