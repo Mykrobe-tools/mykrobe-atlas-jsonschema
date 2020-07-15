@@ -2,25 +2,25 @@ const Metadata = {
   type: "object",
   title: "Metadata",
   properties: {
-    patient: {
-      $ref: "#/definitions/Patient"
-    },
     sample: {
-      $ref: "#/definitions/Sample"
+      $ref: "#/definitions/Sample",
     },
     genotyping: {
-      $ref: "#/definitions/Genotyping"
+      $ref: "#/definitions/Genotyping",
     },
     phenotyping: {
-      $ref: "#/definitions/Phenotyping"
+      $ref: "#/definitions/Phenotyping",
     },
     treatment: {
-      $ref: "#/definitions/Treatment"
+      $ref: "#/definitions/Treatment",
+    },
+    patient: {
+      $ref: "#/definitions/Patient",
     },
     outcome: {
-      $ref: "#/definitions/Outcome"
-    }
-  }
+      $ref: "#/definitions/Outcome",
+    },
+  },
 };
 
 export { Metadata };
