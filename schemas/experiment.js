@@ -6,6 +6,9 @@ const experimentSchema = {
   $schema: "http://json-schema.org/draft-07/schema#",
   definitions,
   properties: {
+    sampleId: {
+      type: "string"
+    },
     file: {
       type: "string"
     },

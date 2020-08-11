@@ -19,6 +19,9 @@ const experimentSearchSchema = {
     DistanceResult: searchDefinitions.DistanceResult
   },
   properties: {
+    sampleId: {
+      type: "string"
+    },
     file: {
       type: "string"
     },
