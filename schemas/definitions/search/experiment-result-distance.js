@@ -7,6 +7,10 @@ const DistanceResult = {
       type: "string",
       enum: ["distance"]
     },
+    leafId: {
+      title: "Leaf Id",
+      type: "string"
+    },
     subType: {
       title: "SubType",
       type: "string",
