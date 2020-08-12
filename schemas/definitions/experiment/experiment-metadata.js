@@ -3,24 +3,24 @@ const Metadata = {
   title: "Metadata",
   properties: {
     sample: {
-      $ref: "#/definitions/Sample",
+      $ref: "#/definitions/Sample"
     },
     genotyping: {
-      $ref: "#/definitions/Genotyping",
+      $ref: "#/definitions/Genotyping"
     },
     phenotyping: {
-      $ref: "#/definitions/Phenotyping",
+      $ref: "#/definitions/Phenotyping"
     },
     treatment: {
-      $ref: "#/definitions/Treatment",
+      $ref: "#/definitions/Treatment"
     },
     patient: {
-      $ref: "#/definitions/Patient",
+      $ref: "#/definitions/Patient"
     },
     outcome: {
-      $ref: "#/definitions/Outcome",
-    },
-  },
+      $ref: "#/definitions/Outcome"
+    }
+  }
 };
 
 export { Metadata };

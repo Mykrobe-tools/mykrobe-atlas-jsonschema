@@ -22,6 +22,9 @@ const experimentSearchSchema = {
     sampleId: {
       type: "string"
     },
+    leafId: {
+      type: "string"
+    },
     file: {
       type: "string"
     },
