@@ -37,12 +37,8 @@ const experimentSearchSchema = {
           title: "Predictor",
           $ref: "#/definitions/PredictorResult"
         },
-        "distance-nearest-neighbour": {
-          title: "Nearest neighbours",
-          $ref: "#/definitions/DistanceResult"
-        },
-        "distance-tree-distance": {
-          title: "Tree distance",
+        distance: {
+          title: "Distance",
           $ref: "#/definitions/DistanceResult"
         }
       }

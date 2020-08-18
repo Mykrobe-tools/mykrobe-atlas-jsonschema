@@ -11,11 +11,6 @@ const DistanceResult = {
       title: "Leaf Id",
       type: "string"
     },
-    subType: {
-      title: "SubType",
-      type: "string",
-      enum: ["tree-distance", "nearest-neighbour"]
-    },
     received: {
       title: "Received",
       type: "string",
