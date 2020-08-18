@@ -7,8 +7,6 @@ const Result = {
       type: "string",
       enum: [
         "predictor",
-        "distance-tree-distance",
-        "distance-nearest-neighbour",
         "distance"
       ]
     },
