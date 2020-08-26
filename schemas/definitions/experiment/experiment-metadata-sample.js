@@ -22,8 +22,9 @@ const Sample = {
     },
     countryIsolate: {
       title: "Country Isolate",
-      type: "string",
+      type: ["string", "null"],
       enum: [
+        null,
         "",
         "AD",
         "AE",
@@ -273,6 +274,7 @@ const Sample = {
         "ZW"
       ],
       enumNames: [
+        "",
         "",
         "Andorra",
         "United Arab Emirates",
@@ -524,7 +526,7 @@ const Sample = {
     },
     cityIsolate: {
       title: "City Isolate",
-      type: "string"
+      type: ["string", "null"]
     },
     longitudeIsolate: {
       title: "Isolate longitude",
