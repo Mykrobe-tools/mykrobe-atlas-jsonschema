@@ -42,6 +42,14 @@ const experimentSearchSchema = {
           $ref: "#/definitions/DistanceResult"
         }
       }
+    },
+    created: {
+      type: "string",
+      format: "date-time"
+    },
+    modified: {
+      type: "string",
+      format: "date-time"
     }
   }
 };
