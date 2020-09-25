@@ -25,8 +25,11 @@ const experimentSearchSchema = {
     leafId: {
       type: "string"
     },
-    file: {
-      type: "string"
+    files: {
+      type: "array",
+      items: {
+        type: "string"
+      }
     },
     metadata: { $ref: "#/definitions/Metadata" },
     results: {
