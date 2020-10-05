@@ -15,7 +15,15 @@ const experimentSchema = {
     files: {
       type: "array",
       items: {
-        type: "string"
+        type: "object",
+        properties: {
+          name: {
+            type: "string"
+          },
+          uploaded: {
+            type: "boolean"
+          }
+        }
       }
     },
     metadata: { $ref: "#/definitions/Metadata" },
