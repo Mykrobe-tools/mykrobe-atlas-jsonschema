@@ -80,8 +80,8 @@ const Phenotyping = {
       title: "Linezolid",
       $ref: "#/definitions/Susceptibility"
     },
-    ethionamideProthionamide: {
-      title: "Ethionamide/Prothionamide",
+    ethionamide: {
+      title: "Ethionamide",
       $ref: "#/definitions/Susceptibility"
     },
     rerizidone: {
@@ -96,8 +96,8 @@ const Phenotyping = {
       title: "Thioacetazone",
       $ref: "#/definitions/Susceptibility"
     },
-    imipenemImipenemcilastatin: {
-      title: "Imipenem/Imipenemcilastatin",
+    imipenem: {
+      title: "Imipenem",
       $ref: "#/definitions/Susceptibility"
     },
     meropenem: {
@@ -122,10 +122,6 @@ const Phenotyping = {
     },
     prothionamide: {
       title: "Prothionamide",
-      $ref: "#/definitions/Susceptibility"
-    },
-    pretothionamide: {
-      title: "Pretothionamide",
       $ref: "#/definitions/Susceptibility"
     },
     pretomanid: {
