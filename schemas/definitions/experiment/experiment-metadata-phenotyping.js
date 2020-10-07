@@ -84,8 +84,8 @@ const Phenotyping = {
       title: "Ethionamide",
       $ref: "#/definitions/Susceptibility"
     },
-    rerizidone: {
-      title: "Rerizidone",
+    terizidone: {
+      title: "Terizidone",
       $ref: "#/definitions/Susceptibility"
     },
     amoxicilinClavulanate: {
