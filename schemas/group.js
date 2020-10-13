@@ -4,12 +4,14 @@ const groupSchema = {
   $schema: "http://json-schema.org/draft-07/schema#",
   properties: {
     name: {
-      type: "string"
+      type: "string",
+      unique: true
     },
     annotation: {
       type: "string"
     }
-  }
+  },
+  required: ["name", "annotation"]
 };
 
 export default groupSchema;
