@@ -9,6 +9,9 @@ const groupSchema = {
     },
     annotation: {
       type: "string"
+    },
+    searchQuery: {
+      type: "object"
     }
   },
   required: ["name", "annotation"]
