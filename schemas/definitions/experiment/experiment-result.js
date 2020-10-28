@@ -5,17 +5,17 @@ const Result = {
     type: {
       title: "Type",
       type: "string",
-      enum: ["predictor", "distance"]
+      enum: ["predictor", "distance"],
     },
     received: {
       title: "Received",
       type: "string",
-      format: "date-time"
+      format: "date-time",
     },
     analysed: {
       title: "Analysed",
       type: "string",
-      format: "date-time"
+      format: "date-time",
     },
     susceptibility: {
       title: "Susceptibility",
@@ -38,20 +38,20 @@ const Result = {
               "Quinolones",
               "Pyrazinamide",
               "Rifampicin",
-              "Amikacin"
-            ]
+              "Amikacin",
+            ],
           },
           prediction: {
             title: "Prediction",
             type: "string",
-            enum: ["R", "S"]
+            enum: ["R", "S"],
           },
           calledBy: {
             title: "Called by",
-            type: "object"
-          }
-        }
-      }
+            type: "object",
+          },
+        },
+      },
     },
     phylogenetics: {
       title: "Phylogenetics",
@@ -63,68 +63,83 @@ const Result = {
             title: "Name",
             type: "string",
             enum: [
-              "complex",
-              "sub-complex",
-              "species",
-              "sub-species",
               "phylo_group",
               "sub_complex",
-              "lineage"
-            ]
+              "species",
+              "lineage",
+              "complex",
+              "sub-complex",
+              "sub-species",
+            ],
           },
           result: {
             title: "Name",
-            type: "string"
+            type: "string",
           },
           percentCoverage: {
             title: "Percent coverage",
-            type: "number"
+            type: "number",
           },
           medianDepth: {
             title: "Median depth",
-            type: "number"
-          }
-        }
-      }
+            type: "number",
+          },
+          lineage: {
+            title: "Lineage",
+            type: "array",
+            items: {
+              type: "string",
+            },
+          },
+          calls: {
+            title: "Calls",
+            type: "object",
+          },
+          callsSummary: {
+            title: "Calls summary",
+            type: "object",
+          },
+        },
+      },
     },
     variantCalls: {
       title: "Variant calls",
-      type: "object"
+      type: "object",
     },
     sequenceCalls: {
       title: "Sequence calls",
-      type: "object"
+      type: "object",
     },
     kmer: {
       title: "K-mer",
-      type: "number"
+      type: "number",
     },
     probeSets: {
       title: "Probe sets",
       type: "array",
       items: {
         title: "Probe set",
-        type: "string"
-      }
+        type: "string",
+      },
     },
     file: {
       title: "Files",
       type: "array",
       items: {
         title: "File",
-        type: "string"
-      }
+        type: "string",
+      },
     },
     version: {
       title: "Version",
-      type: "object"
+      type: "object",
     },
     genotypeModel: {
       title: "Genotype model",
       type: "string",
-      enum: ["median_depth", "kmer_count"]
-    }
-  }
+      enum: ["median_depth", "kmer_count"],
+    },
+  },
 };
 
 export { Result };
