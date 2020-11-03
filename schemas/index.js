@@ -14,6 +14,7 @@ import tree from "./tree";
 import event from "./event";
 import member from "./member";
 import group from "./group";
+import invitation from "./invitation";
 
 export {
   audit,
@@ -31,5 +32,6 @@ export {
   tree,
   event,
   member,
-  group
+  group,
+  invitation
 };
