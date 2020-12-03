@@ -7,10 +7,12 @@ const experimentSchema = {
   definitions,
   properties: {
     sampleId: {
-      type: "string"
+      type: "string",
+      keyword: true,
     },
     leafId: {
-      type: "string"
+      type: "string",
+      keyword: true,
     },
     files: {
       type: "array",
@@ -18,23 +20,23 @@ const experimentSchema = {
         type: "object",
         properties: {
           name: {
-            type: "string"
+            type: "string",
           },
           uploaded: {
-            type: "boolean"
-          }
-        }
-      }
+            type: "boolean",
+          },
+        },
+      },
     },
     metadata: { $ref: "#/definitions/Metadata" },
     results: {
       type: "array",
       title: "Results",
       items: {
-        $ref: "#/definitions/Result"
-      }
-    }
-  }
+        $ref: "#/definitions/Result",
+      },
+    },
+  },
 };
 
 export default experimentSchema;
