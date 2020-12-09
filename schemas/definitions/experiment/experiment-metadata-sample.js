@@ -5,22 +5,23 @@ const Sample = {
     labId: {
       title: "Lab Id",
       type: "string",
-      keyword: true,
+      keyword: true
     },
     isolateId: {
       title: "Isolate Id",
       type: "string",
       keyword: true,
+      index: true
     },
     collectionDate: {
       title: "Collection Date",
       type: "string",
-      format: "date",
+      format: "date"
     },
     prospectiveIsolate: {
       title: "Prospective Isolate",
       type: "string",
-      enum: ["Yes", "No"],
+      enum: ["Yes", "No"]
     },
     countryIsolate: {
       title: "Country Isolate",
@@ -273,7 +274,7 @@ const Sample = {
         "ZA",
         "ZM",
         "ZR",
-        "ZW",
+        "ZW"
       ],
       enumNames: [
         "",
@@ -523,29 +524,29 @@ const Sample = {
         "South Africa",
         "Zambia",
         "Zaire",
-        "Zimbabwe",
-      ],
+        "Zimbabwe"
+      ]
     },
     cityIsolate: {
       title: "City Isolate",
-      type: ["string", "null"],
+      type: ["string", "null"]
     },
     longitudeIsolate: {
       title: "Isolate longitude",
       type: "number",
       minimum: -180,
-      maximum: 180,
+      maximum: 180
     },
     latitudeIsolate: {
       title: "Isolate latitude",
       type: "number",
       minimum: -90,
-      maximum: 90,
+      maximum: 90
     },
     dateArrived: {
       title: "Date Arrived",
       type: "string",
-      format: "date",
+      format: "date"
     },
     anatomicalOrigin: {
       title: "Anatomical Origin",
@@ -558,15 +559,15 @@ const Sample = {
         "Bone",
         "Other known site",
         "Non-respiratory, site not known",
-        "Not known",
-      ],
+        "Not known"
+      ]
     },
     smear: {
       title: "Smear",
       type: "string",
-      enum: ["Negative", "+", "++", "+++", "Not known"],
-    },
-  },
+      enum: ["Negative", "+", "++", "+++", "Not known"]
+    }
+  }
 };
 
 export { Sample };

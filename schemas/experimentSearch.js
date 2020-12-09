@@ -16,16 +16,16 @@ const experimentSearchSchema = {
     DrugPhase: definitions.DrugPhase,
     Outcome: definitions.Outcome,
     PredictorResult: searchDefinitions.PredictorResult,
-    DistanceResult: searchDefinitions.DistanceResult,
+    DistanceResult: searchDefinitions.DistanceResult
   },
   properties: {
     sampleId: {
       type: "string",
-      keyword: true,
+      keyword: true
     },
     leafId: {
       type: "string",
-      keyword: true,
+      keyword: true
     },
     files: {
       type: "array",
@@ -33,13 +33,13 @@ const experimentSearchSchema = {
         type: "object",
         properties: {
           name: {
-            type: "string",
+            type: "string"
           },
           uploaded: {
-            type: "boolean",
-          },
-        },
-      },
+            type: "boolean"
+          }
+        }
+      }
     },
     metadata: { $ref: "#/definitions/Metadata" },
     results: {
@@ -48,23 +48,23 @@ const experimentSearchSchema = {
       properties: {
         predictor: {
           title: "Predictor",
-          $ref: "#/definitions/PredictorResult",
+          $ref: "#/definitions/PredictorResult"
         },
         distance: {
           title: "Distance",
-          $ref: "#/definitions/DistanceResult",
-        },
-      },
+          $ref: "#/definitions/DistanceResult"
+        }
+      }
     },
     created: {
       type: "string",
-      format: "date-time",
+      format: "date-time"
     },
     modified: {
       type: "string",
-      format: "date-time",
-    },
-  },
+      format: "date-time"
+    }
+  }
 };
 
 export default experimentSearchSchema;
