@@ -36,6 +36,9 @@ const experimentSchema = {
       items: {
         $ref: "#/definitions/Result"
       }
+    },
+    awaitingFirstDistanceResult: {
+      type: "boolean"
     }
   }
 };
