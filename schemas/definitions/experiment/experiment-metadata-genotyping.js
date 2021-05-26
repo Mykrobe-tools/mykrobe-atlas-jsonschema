@@ -45,19 +45,19 @@ const Genotyping = {
         "INH inconclusive",
         "Not tested"
       ],
-      synonyms: ["INH => INH sensitive"]
+      synonyms: ["INH sensitive => INH"]
     },
     hainFl: {
       title: "HAIN FL",
       type: "string",
       enum: ["FL sensitive", "FL resistant", "FL inconclusive", "Not tested"],
-      synonyms: ["FL => FL sensitive"]
+      synonyms: ["FL sensitive => FL"]
     },
     hainAm: {
       title: "HAIN AM",
       type: "string",
       enum: ["AM sensitive", "AM resistant", "AM inconclusive", "Not tested"],
-      synonyms: ["AM => AM sensitive"]
+      synonyms: ["AM sensitive => AM"]
     },
     hainEth: {
       title: "HAIN ETH",
@@ -68,7 +68,7 @@ const Genotyping = {
         "ETH inconclusive",
         "Not tested"
       ],
-      synonyms: ["ETH => ETH sensitive"]
+      synonyms: ["ETH sensitive => ETH"]
     }
   }
 };
