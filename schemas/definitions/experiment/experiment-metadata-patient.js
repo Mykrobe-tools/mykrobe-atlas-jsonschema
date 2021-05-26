@@ -561,7 +561,12 @@ const Patient = {
         "Insulin+tablets",
         "Not known"
       ],
-      synonyms: ["Yes => Diabetic; Diabetes"]
+      synonyms: [
+        "Diet alone => Diabetic; Diabetes",
+        "Tablets => Diabetic; Diabetes",
+        "Insulin => Diabetic; Diabetes",
+        "Insulin+tablets => Diabetic; Diabetes"
+      ]
     },
     hivStatus: {
       title: "HIV Status",
