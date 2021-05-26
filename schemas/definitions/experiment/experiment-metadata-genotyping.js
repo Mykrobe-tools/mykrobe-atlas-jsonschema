@@ -19,7 +19,13 @@ const Genotyping = {
     genexpert: {
       title: "Genexpert",
       type: "string",
-      enum: ["RIF sensitive", "RIF resistant", "RIF inconclusive", "Not tested"]
+      enum: [
+        "RIF sensitive",
+        "RIF resistant",
+        "RIF inconclusive",
+        "Not tested"
+      ],
+      synonyms: ["RIF resistant => RIF; Rifampicin"]
     },
     hain: {
       title: "HAIN",
@@ -34,27 +40,51 @@ const Genotyping = {
     hainRif: {
       title: "HAIN RIF",
       type: "string",
-      enum: ["RIF sensitive", "RIF resistant", "RIF inconclusive", "Not tested"]
+      enum: [
+        "RIF sensitive",
+        "RIF resistant",
+        "RIF inconclusive",
+        "Not tested"
+      ],
+      synonyms: ["RIF resistant => RIF; Rifampicin"]
     },
     hainInh: {
       title: "HAIN INH",
       type: "string",
-      enum: ["INH sensitive", "INH resistant", "INH inconclusive", "Not tested"]
+      enum: [
+        "INH sensitive",
+        "INH resistant",
+        "INH inconclusive",
+        "Not tested"
+      ],
+      synonyms: ["INH resistant => INH; Isoniazid"]
     },
     hainFl: {
       title: "HAIN FL",
       type: "string",
-      enum: ["FL sensitive", "FL resistant", "FL inconclusive", "Not tested"]
+      enum: ["FL sensitive", "FL resistant", "FL inconclusive", "Not tested"],
+      synonyms: [
+        "FL resistant => FL; Fluoroquinolone; Ciprofloxacin; Moxifloxacin; Levofloxacin; Ofloxacin"
+      ]
     },
     hainAm: {
       title: "HAIN AM",
       type: "string",
-      enum: ["AM sensitive", "AM resistant", "AM inconclusive", "Not tested"]
+      enum: ["AM sensitive", "AM resistant", "AM inconclusive", "Not tested"],
+      synonyms: [
+        "AM resistant => AM; Aminoglycoside; Gentamicin; Amikacin; Kanamycin; Streptomycin"
+      ]
     },
     hainEth: {
       title: "HAIN ETH",
       type: "string",
-      enum: ["ETH sensitive", "ETH resistant", "ETH inconclusive", "Not tested"]
+      enum: [
+        "ETH sensitive",
+        "ETH resistant",
+        "ETH inconclusive",
+        "Not tested"
+      ],
+      synonyms: ["ETH resistant => ETH; Ethambutol"]
     }
   }
 };
