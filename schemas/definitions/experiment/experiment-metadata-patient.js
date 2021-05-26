@@ -529,36 +529,45 @@ const Patient = {
       title: "Injecting Drug Use",
       type: "string",
       enum: ["Yes", "No"],
-      synonyms: ["Yes => Injecting Drug Use"]
+      synonyms: [
+        "Yes => Injecting Drug Use; Drug User; Drug Use; Drug Abuse; Injecting Drug Use"
+      ]
     },
     homeless: {
       title: "Homeless",
       type: "string",
       enum: ["Yes", "No"],
-      synonyms: ["Yes => Homeless"]
+      synonyms: ["Yes => Homeless; Destitute"]
     },
     imprisoned: {
       title: "Imprisoned",
       type: "string",
       enum: ["Yes", "No"],
-      synonyms: ["Yes => Imprisoned"]
+      synonyms: ["Yes => Prison; Imprisoned; Jail"]
     },
     smoker: {
       title: "Smoker",
       type: "string",
       enum: ["Yes", "No"],
-      synonyms: ["Yes => Smoker, Smoking"]
+      synonyms: ["Yes => Smoker; Smoking; Cigarettes"]
     },
     diabetic: {
       title: "Diabetic",
       type: "string",
-      enum: ["Diet alone", "Tablets", "Insulin", "Insulin+tablets", "Not known"]
+      enum: [
+        "Diet alone",
+        "Tablets",
+        "Insulin",
+        "Insulin+tablets",
+        "Not known"
+      ],
+      synonyms: ["Yes => Diabetic; Diabetes"]
     },
     hivStatus: {
       title: "HIV Status",
       type: "string",
       enum: ["Tested, negative", "Tested, positive", "Not tested", "Not known"],
-      synonyms: ["Tested, positive => HIV"]
+      synonyms: ["Tested, positive => HIV; HIV Positive"]
     },
     art: {
       title: "ART",

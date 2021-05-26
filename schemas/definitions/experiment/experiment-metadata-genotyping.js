@@ -19,7 +19,13 @@ const Genotyping = {
     genexpert: {
       title: "Genexpert",
       type: "string",
-      enum: ["RIF sensitive", "RIF resistant", "RIF inconclusive", "Not tested"]
+      enum: [
+        "RIF sensitive",
+        "RIF resistant",
+        "RIF inconclusive",
+        "Not tested"
+      ],
+      synonyms: ["RIF resistant => RIF; Rifampicin"]
     },
     hain: {
       title: "HAIN",
@@ -34,7 +40,13 @@ const Genotyping = {
     hainRif: {
       title: "HAIN RIF",
       type: "string",
-      enum: ["RIF sensitive", "RIF resistant", "RIF inconclusive", "Not tested"]
+      enum: [
+        "RIF sensitive",
+        "RIF resistant",
+        "RIF inconclusive",
+        "Not tested"
+      ],
+      synonyms: ["RIF resistant => RIF; Rifampicin"]
     },
     hainInh: {
       title: "HAIN INH",
@@ -45,19 +57,23 @@ const Genotyping = {
         "INH inconclusive",
         "Not tested"
       ],
-      synonyms: ["INH sensitive => INH"]
+      synonyms: ["INH resistant => INH; Isoniazid"]
     },
     hainFl: {
       title: "HAIN FL",
       type: "string",
       enum: ["FL sensitive", "FL resistant", "FL inconclusive", "Not tested"],
-      synonyms: ["FL sensitive => FL"]
+      synonyms: [
+        "FL resistant => FL; Fluoroquinolone; Ciprofloxacin; Moxifloxacin; Levofloxacin; Ofloxacin"
+      ]
     },
     hainAm: {
       title: "HAIN AM",
       type: "string",
       enum: ["AM sensitive", "AM resistant", "AM inconclusive", "Not tested"],
-      synonyms: ["AM sensitive => AM"]
+      synonyms: [
+        "AM resistant => AM; Aminoglycoside; Gentamicin; Amikacin; Kanamycin; Streptomycin"
+      ]
     },
     hainEth: {
       title: "HAIN ETH",
@@ -68,7 +84,7 @@ const Genotyping = {
         "ETH inconclusive",
         "Not tested"
       ],
-      synonyms: ["ETH sensitive => ETH"]
+      synonyms: ["ETH resistant => ETH; Ethambutol"]
     }
   }
 };
