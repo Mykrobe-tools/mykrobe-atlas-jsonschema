@@ -1,6 +1,6 @@
 {
   "name": "mykrobe-atlas-jsonschema",
-  "version": "0.0.44",
+  "version": "0.0.45",
   "description": "Mykrobe atlas json schemas",
   "main": "lib/index.js",
   "repository": {

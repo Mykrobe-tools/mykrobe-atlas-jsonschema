@@ -39,22 +39,36 @@ const Genotyping = {
     hainInh: {
       title: "HAIN INH",
       type: "string",
-      enum: ["INH sensitive", "INH resistant", "INH inconclusive", "Not tested"]
+      enum: [
+        "INH sensitive",
+        "INH resistant",
+        "INH inconclusive",
+        "Not tested"
+      ],
+      synonyms: ["INH => INH sensitive"]
     },
     hainFl: {
       title: "HAIN FL",
       type: "string",
-      enum: ["FL sensitive", "FL resistant", "FL inconclusive", "Not tested"]
+      enum: ["FL sensitive", "FL resistant", "FL inconclusive", "Not tested"],
+      synonyms: ["FL => FL sensitive"]
     },
     hainAm: {
       title: "HAIN AM",
       type: "string",
-      enum: ["AM sensitive", "AM resistant", "AM inconclusive", "Not tested"]
+      enum: ["AM sensitive", "AM resistant", "AM inconclusive", "Not tested"],
+      synonyms: ["AM => AM sensitive"]
     },
     hainEth: {
       title: "HAIN ETH",
       type: "string",
-      enum: ["ETH sensitive", "ETH resistant", "ETH inconclusive", "Not tested"]
+      enum: [
+        "ETH sensitive",
+        "ETH resistant",
+        "ETH inconclusive",
+        "Not tested"
+      ],
+      synonyms: ["ETH => ETH sensitive"]
     }
   }
 };
