@@ -110,7 +110,7 @@ const Phenotyping = {
     amoxicilinClavulanate: {
       title: "Amoxicilin/Clavulanate",
       $ref: "#/definitions/Susceptibility",
-      synonyms: ["Susceptibility/Resistant => Amoxicilin; Clavulanate"]
+      synonyms: ["Susceptibility/Resistant => Amoxicilin, Clavulanate"]
     },
     thioacetazone: {
       title: "Thioacetazone",
