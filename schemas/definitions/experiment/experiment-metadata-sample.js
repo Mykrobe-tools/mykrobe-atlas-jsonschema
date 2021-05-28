@@ -525,7 +525,8 @@ const Sample = {
         "Zambia",
         "Zaire",
         "Zimbabwe"
-      ]
+      ],
+      useSynonyms: true
     },
     cityIsolate: {
       title: "City Isolate",
