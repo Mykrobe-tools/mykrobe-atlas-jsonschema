@@ -132,22 +132,22 @@ const PredictorResult = {
     r: {
       title: "Resistant",
       type: "boolean",
-      synonyms: ["true => Resistant"]
+      synonyms: ["true , Resistant"]
     },
     mdr: {
       title: "MDR",
       type: "boolean",
-      synonyms: ["true => MDR"]
+      synonyms: ["true , MDR"]
     },
     xdr: {
       title: "XDR",
       type: "boolean",
-      synonyms: ["true => XDR"]
+      synonyms: ["true , XDR"]
     },
     tdr: {
       title: "TDR",
       type: "boolean",
-      synonyms: ["true => TDR"]
+      synonyms: ["true , TDR"]
     },
     type: {
       title: "Type",
