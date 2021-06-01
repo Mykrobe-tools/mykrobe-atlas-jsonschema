@@ -530,26 +530,26 @@ const Patient = {
       type: "string",
       enum: ["Yes", "No"],
       synonyms: [
-        "Yes , Injecting Drug Use, Drug User, Drug Use, Drug Abuse, Injecting Drug Use"
+        "Yes, Injecting Drug Use, Drug User, Drug Use, Drug Abuse, Injecting Drug Use"
       ]
     },
     homeless: {
       title: "Homeless",
       type: "string",
       enum: ["Yes", "No"],
-      synonyms: ["Yes , Homeless, Destitute"]
+      synonyms: ["Yes, Homeless, Destitute"]
     },
     imprisoned: {
       title: "Imprisoned",
       type: "string",
       enum: ["Yes", "No"],
-      synonyms: ["Yes , Prison, Imprisoned, Jail"]
+      synonyms: ["Yes, Prison, Imprisoned, Jail"]
     },
     smoker: {
       title: "Smoker",
       type: "string",
       enum: ["Yes", "No"],
-      synonyms: ["Yes , Smoker, Smoking, Cigarettes"]
+      synonyms: ["Yes, Smoker, Smoking, Cigarettes"]
     },
     diabetic: {
       title: "Diabetic",
@@ -562,17 +562,17 @@ const Patient = {
         "Not known"
       ],
       synonyms: [
-        "Diet alone , Diabetic, Diabetes",
-        "Tablets , Diabetic, Diabetes",
-        "Insulin , Diabetic, Diabetes",
-        "Insulin+tablets , Diabetic, Diabetes"
+        "Diet alone, Diabetic, Diabetes",
+        "Tablets, Diabetic, Diabetes",
+        "Insulin, Diabetic, Diabetes",
+        "Insulin+tablets, Diabetic, Diabetes"
       ]
     },
     hivStatus: {
       title: "HIV Status",
       type: "string",
       enum: ["Tested, negative", "Tested, positive", "Not tested", "Not known"],
-      synonyms: ["Tested, positive , HIV, HIV Positive"]
+      synonyms: ["Tested, positive, HIV, HIV Positive"]
     },
     art: {
       title: "ART",
