@@ -24,7 +24,7 @@ const Phenotyping = {
     },
     isoniazid: {
       title: "Isoniazid",
-      $ref: "#/Susceptibility/Resistant/Susceptibility",
+      $ref: "#/definitions/Susceptibility",
       synonyms: ["Resistant, Isoniazid"]
     },
     phenotypeInformationOtherDrugs: {
