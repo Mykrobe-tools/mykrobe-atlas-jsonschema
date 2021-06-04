@@ -16,7 +16,8 @@ const experimentSearchSchema = {
     DrugPhase: definitions.DrugPhase,
     Outcome: definitions.Outcome,
     PredictorResult: searchDefinitions.PredictorResult,
-    DistanceResult: searchDefinitions.DistanceResult
+    DistanceResult: searchDefinitions.DistanceResult,
+    ClusterResult: searchDefinitions.ClusterResult
   },
   properties: {
     sampleId: {
@@ -53,6 +54,10 @@ const experimentSearchSchema = {
         distance: {
           title: "Distance",
           $ref: "#/definitions/DistanceResult"
+        },
+        cluster: {
+          title: "Distance",
+          $ref: "#/definitions/ClusterResult"
         }
       }
     },
